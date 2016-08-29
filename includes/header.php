@@ -1,0 +1,338 @@
+<!-- Land lord signin -->
+<div class="modal fade" id="signin_modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Sign In to Your Account</h4>
+                <div class="tag"><img src="images/tag.png" alt="" /></div>
+            </div>
+            <div class="modal-body">
+                <form id="signin">
+
+                    <p class="msg"></p>
+
+                    <div class="form-group has-feedback">
+                        <span aria-hidden="true" class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                        <input type="text" class="form-control" name="username" id="username" placeholder="Email">
+                    </div>
+                    <div class="form-group has-feedback">
+                        <span aria-hidden="true" class="glyphicon glyphicon-lock form-control-feedback"></span>
+                        <input type="password" class="form-control" name="userpass" id="userpass" placeholder="Password">
+                    </div>
+
+                    <div class="form-group">
+                        <p>
+                            <span class="pull-left"><input type="checkbox"> Remember me</span> <span class="pull-right"><a href="" class="up">Forgot your password?</a></span>
+                        </p>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-block btn-primary" value="Sign In">
+                    </div>
+
+                    <div class="form-group ">
+                        <div class="or">
+                            <img style=" margin: 0 auto; widrh:44px ; height: 18px; display: block;" alt="" src="images/or.jpg">
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="col-xs-6 pad-left0">
+                        <a href="" class="btn btn-twitter"><i class="fa fa-twitter"></i> Twitter</a>
+                    </div>
+                    <div class="form-group col-xs-6 pad-right0">
+                        <a href="" class="btn btn-instagram"><i class="fa fa-instagram"></i> Instagram</a>
+                    </div>
+                    <p>Not A Member Yet? <a href="" class="up">Sign Up Now</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Land lord signup -->
+<!--<div class="modal fade" id="landlord_signup_modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Landlord Sign Up</h4>
+                <div class="tag"><img src="images/tag.png" alt="" /></div>
+            </div>
+            <div class="modal-body">
+                <form id="landlord_signup">
+                    
+                    <p class="msg"></p>
+                    
+                    <div class="form-group has-feedback">
+                        <span aria-hidden="true" class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                        <input type="text" class="form-control" name="ls_fname" id="ls_fname" placeholder="First Name">
+                    </div>
+                    <div class="form-group has-feedback">
+                        <span aria-hidden="true" class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                        <input type="text" class="form-control" name="ls_lname" id="ls_lname" placeholder="Last Name">
+                    </div>
+                    <div class="form-group has-feedback">
+                        <span aria-hidden="true" class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                        <input type="text" class="form-control" name="ls_email" id="ls_email" placeholder="Email">
+                    </div>
+                    <div class="form-group has-feedback">
+                        <span aria-hidden="true" class="glyphicon glyphicon-lock form-control-feedback"></span>
+                        <input type="password" class="form-control" name="ls_pass" id="ls_pass" placeholder="Password">
+                    </div>
+                    <div class="form-group has-feedback">
+                        <span aria-hidden="true" class="glyphicon glyphicon-lock form-control-feedback"></span>
+                        <input type="password" class="form-control" name="ls_cpass" id="ls_cpass" placeholder="Confirm Password">
+                    </div>
+                    
+                    <div class="form-group">
+                        <p>
+                            <span class="pull-left"><input type="checkbox"> Remember me</span> <span class="pull-right"><a href="" class="up">Forgot your password?</a></span>
+                        </p>
+                        <div class="clearfix"></div>
+                    </div>
+                    
+                    
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-block btn-primary" value="Sign Up">
+                    </div>
+
+                    <div class="form-group ">
+                        <div class="or">
+                            <img style=" margin: 0 auto; widrh:44px ; height: 18px; display: block;" alt="" src="images/or.jpg">
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    
+                    <p>Already A Member Yet? <a href="" class="up signin">Sign In</a></p>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<!-- User signup -->
+<!--<div class="modal fade" id="user_signup_modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">User Sign Up</h4>
+                <div class="tag"><img src="images/tag.png" alt="" /></div>
+            </div>
+            <div class="modal-body">
+                <form id="user_signup">
+                    
+                    <p class="msg"></p>
+                    
+                    <div class="form-group has-feedback">
+                        <span aria-hidden="true" class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                        <input type="text" class="form-control" name="us_fname" id="us_fname" placeholder="First Name">
+                    </div>
+                    <div class="form-group has-feedback">
+                        <span aria-hidden="true" class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                        <input type="text" class="form-control" name="us_lname" id="us_lname" placeholder="Last Name">
+                    </div>
+                    <div class="form-group has-feedback">
+                        <span aria-hidden="true" class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                        <input type="text" class="form-control" name="us_email" id="us_email" placeholder="Email">
+                    </div>
+                    <div class="form-group has-feedback">
+                        <span aria-hidden="true" class="glyphicon glyphicon-lock form-control-feedback"></span>
+                        <input type="password" class="form-control" name="us_pass" id="us_pass" placeholder="Password">
+                    </div>
+                    <div class="form-group has-feedback">
+                        <span aria-hidden="true" class="glyphicon glyphicon-lock form-control-feedback"></span>
+                        <input type="password" class="form-control" name="us_cpass" id="us_cpass" placeholder="Confirm Password">
+                    </div>
+                    
+                    <div class="form-group">
+                        <p>
+                            <span class="pull-left"><input type="checkbox"> Remember me</span> <span class="pull-right"><a href="" class="up">Forgot your password?</a></span>
+                        </p>
+                        <div class="clearfix"></div>
+                    </div>
+                    
+                    
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-block btn-primary" value="Sign Up">
+                    </div>
+
+                    <div class="form-group ">
+                        <div class="or">
+                            <img style=" margin: 0 auto; widrh:44px ; height: 18px; display: block;" alt="" src="images/or.jpg">
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    
+                    <p>Already A Member Yet? <a href="" class="up signin">Sign In</a></p>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.php" class="navbar-brand page-scroll"><img src="upload/site_logo/<?php echo $settings['sitelogo']; ?>" alt="<?php echo $settings['alt_text']; ?>" class="img-responsive" title="<?php echo $settings['alt_text']; ?>" /></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-left lang">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">English <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Chinese</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <?php
+            $ussee = mysql_fetch_array(mysql_query("select * from `estejmam_user` where `id`='" . $_SESSION['userid'] . "'"));
+            if ($ussee['image'] != '') {
+                $immg = "upload/userimages/" . $ussee['image'];
+            } else {
+                $immg = "upload/nouser.jpg";
+            }
+            ?>
+            <ul class="nav navbar-nav navbar-right right_navi">
+                <?php if (!is_user_logged_in()) { ?>
+                    <li class="become-landlord">
+                        <a href="#" data-target="#landlord_signup_modal" data-toggle="modal" class="custom_modal_signup">Become a landlord</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                    <li>
+                        <a href="#" data-target="#signin_modal" data-toggle="modal">Sign In</a>
+                    </li>
+                    <li>
+                        <a href="#" data-target="#user_signup_modal" data-toggle="modal" class="custom_modal_signup">Sign Up</a>
+                    </li>
+                <?php } else { ?>
+                    <li>
+                        <a href="index.php"><i class="fa fa-home"></i>Home</a>	
+                    </li>
+                    <li>
+                        <a href="inbox.php"><i class="fa fa-envelope"></i>Message</a>	
+                    </li>
+                    <li>
+                        <a><i class="fa fa-question-circle"></i>Help</a>	
+                    </li>
+                    <li>
+                        <a href="my_account.php"><span><img src="<?php echo $immg; ?>" alt=""></span><?php echo $ussee['fname'] . ' ' . $ussee['lname'] ?></a>	
+                    </li>
+                    <li>
+                        <a href="logout.php"><i class="fa fa-sign-out"></i>Log Out</a>
+                    </li>
+                <?php } ?>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<script>
+    $(function () {
+
+        $('#signin').submit(function () {
+            $.ajax({
+                type: 'POST',
+                url: 'functions/ajax.php?action=signin',
+                data: {
+                    username: $('#username').val(),
+                    userpass: $('#userpass').val()
+                },
+                success: function (res) {
+                    var data = $.parseJSON(res);
+
+                    if (data.ack == 1) {
+                        $('#signin p.msg').text(data.msg);
+                        window.location.href = data.redirect_url;
+                    } else {
+                        $('#signin p.msg').text(data.msg);
+                    }
+
+                }
+            });
+            return false;
+        });
+
+
+        /*$('#user_signup').submit(function(){
+         $.ajax({
+         type: 'POST',
+         url: 'functions/ajax.php',
+         data: {
+         action: 'user_signup',
+         fname: $('#us_fname').val(),
+         lname: $('#us_lname').val(),
+         email: $('#us_email').val(),
+         pass: $('#us_pass').val(),
+         cpass: $('#us_cpass').val()
+         },
+         success: function(res){
+         var data = $.parseJSON(res);
+         
+         if(data.ack == 1){
+         $('#user_signup p.msg').text(data.msg);
+         window.location.href = data.redirect_url;
+         } else {
+         $('#user_signup p.msg').text(data.msg);
+         }
+         }
+         });
+         
+         return false;
+         });
+         
+         
+         $('#landlord_signup').submit(function(){
+         $.ajax({
+         type: 'POST',
+         url: 'functions/ajax.php',
+         data: {
+         action: 'landlord_signup',
+         fname: $('#ls_fname').val(),
+         lname: $('#ls_lname').val(),
+         email: $('#ls_email').val(),
+         pass: $('#ls_pass').val(),
+         cpass: $('#ls_cpass').val()
+         },
+         success: function(res){
+         var data = $.parseJSON(res);
+         
+         if(data.ack == 1){
+         $('#landlord_signup p.msg').text(data.msg);
+         window.location.href = data.redirect_url;
+         } else {
+         $('#landlord_signup p.msg').text(data.msg);
+         }
+         }
+         });
+         
+         return false;
+         });
+         
+         
+         $('.signin').click(function(e){
+         e.preventDefault();
+         $(this).closest('div.modal').modal("hide");
+         $("#signin_modal").modal("show");
+         });*/
+
+    });
+</script>

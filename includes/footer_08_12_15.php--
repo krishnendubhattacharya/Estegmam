@@ -1,0 +1,24 @@
+<footer>
+<div class="container">
+<div class="foot_contener">
+<div class="footer_menu">
+<ul class="footmenu_ul">
+    <li><a href="cms.php?id=6">Privacy Statement &nbsp;&nbsp;&nbsp; | </a></li>
+<li><a href="cms.php?id=5">Terms And Condition &nbsp;&nbsp;&nbsp; | </a></li>
+<li><a href="cms.php?id=1">About Us &nbsp;&nbsp;&nbsp; | </a></li>
+<li><a>Contact Us </a></li>
+</ul>
+</div>
+<p class="foot_p">&copy; <?php date('Y');?> HOME VACATION CLUB. ALL RIGHT RESERVED</p>
+<ul class="foot_social">
+<li><a><img src="images/face_book.png" alt=""></a></li> 
+<li><a><img src="images/tweet.png" alt=""></a></li> 
+<li><a><img src="images/google.png" alt=""></a></li>
+</ul>
+<div class="clearfix"></div>
+</div>
+<div class="foot_img">
+<img src="images/mack.png"></div>
+<div class="clearfix"></div>
+</div>
+</footer>

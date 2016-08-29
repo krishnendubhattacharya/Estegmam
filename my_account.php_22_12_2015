@@ -1,0 +1,175 @@
+<?php
+ob_start();
+session_start();
+include("administrator/includes/config.php");
+include("functions/functions.php");
+
+if (!is_user_logged_in()) {
+    header("location:index.php");
+}
+?>
+
+<?php
+if ($_POST['submit']) {
+    if ($_FILES['image']['tmp_name'] != '') {
+        $target_path = "upload/userimages/";
+        $userfile_name = $_FILES['image']['name'];
+        $userfile_tmp = $_FILES['image']['tmp_name'];
+        $img_name = time() . $userfile_name;
+        $img = $target_path . $img_name;
+        move_uploaded_file($userfile_tmp, $img);
+    } else {
+        $img_name = $_REQUEST['hidimage'];
+    }
+    $profupdate = "update `estejmam_user` set `fname`='" . $_REQUEST['fname'] . "',`lname`='" . $_REQUEST['lname'] . "',`email`='" . $_REQUEST['email'] . "',`phone`='" . $_REQUEST['phone'] . "',`image`='" . $img_name . "',`country`='" . $_REQUEST['country'] . "',`state`='" . $_REQUEST['state'] . "',`city`='" . $_REQUEST['city'] . "',`zip`='" . $_REQUEST['zip'] . "' where `id`='" . $_REQUEST['id'] . "'";
+
+    mysql_query($profupdate);
+    $_SESSION['msg'] = 'Your Profile Updated Successfully ';
+    header('location:my_account.php');
+    exit();
+}
+?>
+
+
+
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Estejmam</title>
+
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.css" rel="stylesheet">
+        <link href='css/jquery.bxslider.css' rel='stylesheet' type='text/css'>
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/style5.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style3.css" />
+        <link rel="stylesheet" type="text/css" href="css/style8.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+        
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </head>
+    <body>
+
+        <?php include("includes/inner-header.php"); ?>
+
+
+        <section class="add-property">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+
+                        <?php include("includes/my-account_left.php"); ?>
+
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="add-property_right">
+                            <h3>Please fill the form</h3>
+                            <h4>Basic Information</h4>
+                            <form class="" action="" method="POST" enctype="multipart/form-data">
+                                <input type="hidden" name="id" value="<?php echo $_SESSION['userid'] ?>">
+                                <input type="hidden" name="hidimage" value="<?php echo $prof['image'] ?>">
+                                <div class="form-group">
+                                    <label>First Name :</label>
+                                    <input class="form-control" type="text" name="fname" value="<?php echo $prof['fname'] ?>" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Last Name :</label>
+                                    <input class="form-control" type="text" name="lname" value="<?php echo $prof['lname'] ?>" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Email :</label>
+                                    <input class="form-control" type="email" name="email" value="<?php echo $prof['email'] ?>" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Phone :</label>
+                                    <input class="form-control" type="text" name="phone" value="<?php echo $prof['phone'] ?>" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Country :</label>
+                                    <input class="form-control" type="text" name="country" value="<?php echo $prof['country'] ?>" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>State :</label>
+                                    <input class="form-control" type="text" name="state" value="<?php echo $prof['state'] ?>" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>City :</label>
+                                    <input class="form-control" type="text" name="city" value="<?php echo $prof['city'] ?>" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Zip :</label>
+                                    <input class="form-control" type="text" name="zip" value="<?php echo $prof['zip'] ?>" required>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label>Profile Image :</label>
+                                    <input type="file" name="image">
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <input type="submit" name="submit" class="btn btn-primary" value="Save">
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>	
+
+
+        <?php include("includes/footer.php"); ?>
+
+        
+        <script src="js/jquery.bxslider.js"></script>
+        <script type='text/javascript'>
+            $(function () {
+                //Keep track of last scroll
+                var lastScroll = 100;
+                $(window).scroll(function (event) {
+
+
+                    var s1 = $(this).scrollTop();
+
+
+                    if (s1 > 100)
+                    {
+                        $('.navbar-fixed-top').addClass('scroll_head');
+                        //alert("ok");
+                    }
+                    else {
+                        //$('header').removeClass('transparent');
+                        $('.navbar-fixed-top').removeClass('scroll_head');
+                    }
+                });
+
+            });
+        </script>
+
+
+
+        <script>
+            $(document).ready(function () {
+                $('.bxslider').bxSlider({
+                    auto: true,
+                    autoControls: true
+                });
+            });
+        </script>
+
+    </body>
+</html>

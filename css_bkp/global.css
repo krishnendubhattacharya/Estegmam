@@ -1,0 +1,63 @@
+ol,ul { list-style:none; }
+
+#example {
+	width:699px;
+	height: 327px;
+	position:relative;
+}
+
+#slides {
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:100;
+}
+
+#slides .next,#slides .prev {
+	position:absolute;
+	top:107px;
+	left:-39px;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+}
+
+.slides_container {
+	width:699px;
+	height: 327px;
+	overflow:hidden;
+	position:relative;
+}
+
+#slides .next {
+	left:585px;
+}
+
+.pagination {
+	position:absolute;
+	margin: -372px auto 0 290px;
+	width:150px;
+	z-index: 1001;
+	padding: 10px 0 10px 15px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+}
+
+.pagination li a {
+	display:block;
+	width:13px;
+	height:0;
+	padding-top: 13px;
+	background-image:url(../img/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -23px;
+}

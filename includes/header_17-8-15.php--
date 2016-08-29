@@ -1,0 +1,33 @@
+<header>
+
+<div class="container">
+
+<div class="logo"><a href="index.php"><img src="upload/site_logo/<?php echo $settings['sitelogo'];?>" alt=""></a></div>
+
+<nav> 
+
+<a href="">Club</a> 
+
+<a href="member.php">Membership</a> 
+
+<a href="location.php">Locations</a> <a href="reservation.php">Reservations</a> 
+
+<a href="">Vacation Home for sale</a> </nav>
+
+<div class="right_header">
+
+<ul>
+
+<li><a href="" class="fb"><i class="fa fa-facebook"></i></a></li>
+
+<li><a href="" class="twt"><i class="fa fa-twitter"></i></a></li>
+
+<li><a href=""><i class="fa fa-google-plus"></i></a></li></ul>
+
+<span><a href="">List your property</a></span>
+
+</div>
+
+</div>
+
+</header>

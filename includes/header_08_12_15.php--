@@ -1,0 +1,69 @@
+<header>
+
+<div class="container">
+
+<div class="logo"><a href="index.php"><img src="upload/site_logo/<?php echo $settings['sitelogo'];?>" alt=""></a></div>
+
+<nav> 
+
+<a href="">Club</a> 
+
+<a href="member.php">Membership</a> 
+
+<a href="location.php">Locations</a> <a href="reservation.php">Reservations</a> 
+
+<a href="">Vacation Home for sale</a> </nav>
+
+<div class="right_header">
+
+<ul type="circle">
+
+            <li><a href="" class="fb"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="" class="twt"><i class="fa fa-twitter"></i></a></li>
+            <li><a href=""><i class="fa fa-google-plus"></i></a></li> 
+            <?php 
+			if($_SESSION['user_id']=='')
+			{
+			?>                                                   
+            <li><a href="login.php"  style="font-size:12px;">sign in</a></li>
+            <?php }else{?>
+            <li><a href="my_account.php"  style="font-size:12px;">My Account</a></li>
+            <li><a href="logout.php"  style="font-size:12px;">sign out</a></li>
+            <?php }?>
+          
+          </ul>
+
+<span><a href="">List your property</a></span>
+
+</div>
+
+</div>
+
+</header>
+<div class="home_container">
+
+      <div class="searchboxes">
+
+          <form action="search_by_cat.php" name="search">
+
+              <select id="country" name="country">
+                <option value="">Select One</option>
+                <option value="1"> A city</option>
+                <option value="2">Airport </option>
+                <option value="3"> Attraction</option>
+                <option value="4">Home ID number </option>    
+              </select>
+
+          <input type="text" name="key" placeholder="KEYWORD" value="<?php echo $_REQUEST['key']?>">
+
+          <input type="text" name="" placeholder="CHECK IN">
+
+          <input type="text" name="" placeholder="CHECK OUT">
+
+          <input type="submit" name="" value="FIND !" class="actionsearch" >
+
+        </form>
+
+      </div>
+
+      </div>
